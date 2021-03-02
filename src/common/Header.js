@@ -72,10 +72,12 @@ export default function ApplicationBar() {
       onClose={handleNotificationMenuClose}
     >
       <MenuItem onClick={handleNotificationMenuClose}>
-        APPROVED UCL-2802219909 
+        <span className="badge badge-pill badge-success">APPROVED</span>
+        <span>UCL-2802219909</span>
       </MenuItem>
       <MenuItem onClick={handleNotificationMenuClose}>
-        REJECTED UCL-2802218898
+        <span className="badge badge-pill badge-danger">REJECTED</span>
+        <span>UCL-2802218898</span>
       </MenuItem>
     </Menu>
   );
