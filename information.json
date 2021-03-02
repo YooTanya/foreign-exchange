@@ -1,0 +1,88 @@
+{
+  "rates": [
+    {
+      "currency": "CAD",
+      "rate": 23.83,
+      "spread": 0.40
+    },
+    {
+      "currency": "CHF",
+      "rate": 33.50,
+      "spread": 0.20
+    },
+    {
+      "currency": "EUR",
+      "rate": 36.52,
+      "spread": 0.20
+    },
+    {
+      "currency": "GBP",
+      "rate": 42.21,
+      "spread": 0.15
+    },
+    {
+      "currency": "JPY",
+      "rate": 0.29,
+      "spread": 0.03
+    },
+    {
+      "currency": "USD",
+      "rate": 30.01,
+      "spread": 0.20
+    }
+  ],
+  "branches": [
+    {
+      "id": "UCL",
+      "name": "Bangkok Branch",
+      "address": {
+        "line1": "U CHU LIANG BUILDING",
+        "line2": "968 Rama IV Road",
+        "line3": "Silom, Bangrak",
+        "city": "Bangkok",
+        "zip": "10500",
+        "country": "Thailand",
+        "tel": "+6620395000"
+      }
+    },
+    {
+      "id": "STW",
+      "name": "Seoul Branch",
+      "address": {
+        "line1": "9F S Tower",
+        "line2": "82 Saemunan-ro, Jongro-gu",
+        "line3": "",
+        "city": "Seoul",
+        "zip": "03185",
+        "country": "South Korea",
+        "tel": "+82264545400"
+      }
+    },
+    {
+      "id": "ORQ",
+      "name": "One Raffles Quay Branch",
+      "address": {
+        "line1": "ONE RAFFLES QUAY (NORTH TOWER)",
+        "line2": "#28-01",
+        "line3": "",
+        "city": "Singapore",
+        "zip": "048583",
+        "country": "Singapore",
+        "tel": "+6569299700"
+      }
+    },
+    {
+      "id": "ABT",
+      "name": "Tokyo Branch",
+      "address": {
+        "line1": "Akasaka Biz Tower",
+        "line2": "5-3-1 Akasaka, Minato-Ku",
+        "line3": "",
+        "city": "Tokyo ",
+        "zip": "107-6901",
+        "country": "Japan",
+        "tel": "+813 6441 1200"
+      }
+    }
+  ]
+}
