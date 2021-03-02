@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -12,17 +13,8 @@ import TableRow from '@material-ui/core/TableRow';
 const columns = [
   { id: 'transactionID', label: 'Transaction ID', minWidth: 170 },
   { id: 'customer', label: 'Customer', minWidth: 100 },
-  {
-    id: 'owner',
-    label: 'Case Owner',
-    minWidth: 170,
-  },
-  {
-    id: 'status',
-    label: 'Status',
-    minWidth: 170,
-    align: 'right',
-  },
+  { id: 'owner', label: 'Case Owner', minWidth: 170 },
+  { id: 'status', label: 'Status', minWidth: 170 }
 ];
 
 function createData(transactionID, customer, owner, status) {
@@ -84,8 +76,18 @@ const RequestListTable = () => {
                   {columns.map((column) => {
                     const value = row[column.id];
                     return (
-                      <TableCell key={column.id} align={column.align}>
-                        {column.format && typeof value === 'number' ? column.format(value) : value}
+                      <TableCell key={column.id}>
+                        <div
+                          className={clsx(
+                              { 
+                                'badge badge-pill badge-danger': value === 'REJECTED',
+                                'badge badge-pill badge-warning':value === 'PENDING',
+                                'badge badge-pill badge-primary': value === 'RESUBMITTED',
+                                'badge badge-pill badge-success': value === 'APPROVED' 
+                              }
+                            )}>
+                          {value}
+                        </div>
                       </TableCell>
                     );
                   })}
