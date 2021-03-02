@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
 const RequestListEmpty = (props) => {
   const classes = useStyles();
   return (
-		<Box class={classes.root}>
-      <Paper class={classes.paper}>
+		<Box className={classes.root}>
+      <Paper className={classes.paper}>
         <Typography>There is no request yet.</Typography>
       </Paper>
     </Box>
